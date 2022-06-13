@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #ffffff;
+    color: #000000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 30px;
+    height: 50px;
+}
+
+header h1 {
+    color: #5909c2;
+    font-size: 25px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav li {
+    list-style-type: none;
+    margin: 0 15px;
+}
+
+header nav li:last-child {
+    margin-right: 0;
+}
+
+header nav li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #000000;
+    padding: 2px 8px;
+}
+
+header .login .log-in {
+    border: none;
+    outline: none;
+    cursor: grab;
+    font-weight: 650;
+    background: none;
+    margin-right: 5px;
+}
+
+header .login .start {
+    border: none;
+    outline: none;
+    cursor: grab;
+    background: #000000;
+    padding: 7px 15px;
+    color: #ffffff;
+}
+
+header .login .start:hover {
+    color: #9b8585;
+}
+
+.learn-more {
+    background: #f0ec0d;
+    margin: 0px;
+    padding: 20px 0;
+    text-align: center;
+    align-items: center;
+}
+
+.learn-more .more {
+    background: #ffffff;
+    padding: 13px 12px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.body {
+    margin: 10px 30px;
+    flex: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 30px 0 ;
+}
+
+.header .firstslide {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.header .firstslide h2 {
+    font-size: 35px;
+    font-weight: 780;
+    margin: 18px 0;
+    line-height: 50px;
+}
+
+.header .firstslide h2 span {
+    color: #5909c2 ;
+}
+
+.header .firstslide p {
+    text-align: justify;
+    line-height: 30px;
+    margin-bottom: 40px;
+}
+
+.header .firstslide .jumpstart {
+    background: none;
+    border: 1px solid #000000;
+    padding: 10px 20px;
+    width: 125px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 700;
+    color: #000000;
+}
+
+.header .firstslide .jumpstart:hover {
+    color: #ad9d9d;
+    background: #f1ecec;
+}
+
+.header .secondslide img {
+    height: 400px;
+    max-width: 400px;
+}
+
+.service-icon {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.service-icon p {
+    font-weight: 750;
+    font-size: 23px;
+}
+
+.service-icon .icon-holder {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-icon .icon-holder .i-holder {
+    font-size: 80px;
+    margin-right: 110px;
+    margin-top: 50px;
+    color: #777;
+}
+
+.service-icon .icon-holder .i-holder:last-child {
+    margin-right: 0;
+}
+
+.service-icon .service {
+    display: flex;
+    justify-content: space-between;
+}
+
+.service-icon .service .service-container img {
+    height: 120px;
+    width: 120px;
+    border-radius: 5%;
+    margin: 15px
+}
+
+.service-icon .service .service-container {
+    display: flex;
+    flex-direction: column;
+    background: #6b27a3;
+    margin: 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+
+.service-icon .service .service-container h2 {
+    font-weight: 650;
+    font-size: 22px;
+}
+
+
+.service-icon .service .service-container p {
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 15px;
+}
+
+.about-container img {
+    height: 300px;
+    max-width: 300px;
+}
