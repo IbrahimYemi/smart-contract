@@ -83,6 +83,7 @@ header .login i {
     display: none;
 }
 
+
 .learn-more {
     background: #f0ec0d;
     margin: 0px;
@@ -404,12 +405,48 @@ footer .footer-container .samsung {
         justify-content: space-between;
         align-items: center;
         margin: 0 20px;
+        position: relative;
     }
     header nav {
         display: none;
     }
+    header nav.tabs {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 0px;
+        background: #ffffff;
+        width: 60%;
+        border-left: 1px solid black;
+        height: 100vh;
+        text-align: justify;
+        padding: 30px;
+        transition: display 0.4s ease;
+    }
+    header nav li {
+        list-style-type: none;
+        margin: 25px 5px;
+    }
+    
+    header nav.tabs li:last-child {
+        margin-right: auto;
+    }
+    
+    header nav li a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #000000;
+        padding: 2px 8px;
+        transition: margin .2s;
+    }
+    header nav li a:hover {
+        text-decoration: underline;
+        font-weight: 550;
+        margin-left: 20px;
+    }
     header .login i {
         display: block;
+        cursor: pointer;
     } 
     .learn-more {
         width: 100%;
