@@ -306,11 +306,19 @@ header .login .start:hover {
     background-color: #b1ae80;
     padding: 20px 5px;
     margin-bottom: 5px;
+    transition: display 1s;
+    transform-origin: top;
 }
 
-.fa.fa-times:hover,
-.fa.fa-times:focus {
+.accordion .accordion-container .acc-show.hide {
+    display: none;
+    transform: scaleY(0.7);
+}
+
+.accordion .accordion-container h3:hover .fa.fa-times,
+.accordion .accordion-container h3:focus .fa.fa-times:focus {
     transform: rotate(45deg);
+    transition: all .1s;
 }
 
 footer {
