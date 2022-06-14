@@ -46,6 +46,11 @@ header nav li a {
     padding: 2px 8px;
 }
 
+header .login {
+    display: flex;
+    align-items: center;
+}
+
 header .login .log-in {
     border: none;
     outline: none;
@@ -66,6 +71,16 @@ header .login .start {
 
 header .login .start:hover {
     color: #9b8585;
+}
+
+header .login i {
+    font-size: 25px;
+    margin: 0 8px;
+    color: #fefeff;
+    background: #0d1000;
+    padding: 3px;
+    border-radius: 2px;
+    display: none;
 }
 
 .learn-more {
@@ -378,4 +393,129 @@ footer .footer-container .samsung {
     color: #fc0707;
     letter-spacing: 1px;
     font-style: italic;
+}
+
+/* media queries */
+@media only screen and (max-width:752px) {
+    header {
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 20px;
+    }
+    header nav {
+        display: none;
+    }
+    header .login i {
+        display: block;
+    } 
+    .learn-more {
+        width: 100%;
+        text-align: center;
+        height: auto;
+        padding: 4px 10px;
+        line-height: 22px;
+    }
+    .learn-more .more {
+        padding: 2px 5px;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+    .header .firstslide {
+        width: 100%;
+    }
+    .header .secondslide {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 30px 0;
+    }
+    .header .secondslide img {
+        max-width: 100%;
+    }
+    .service-icon p {
+        text-align: center;
+    }
+    .service-icon .icon-holder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .service-icon .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .service-icon .service .service-container:nth-child(2) {
+        margin-top: 40px;
+    }
+    .service-icon .icon-holder .i-holder {
+        font-size: 80px;
+        color: #777;
+        display: flex;
+        align-self: center;
+        justify-content: center;
+        margin: 20px auto;
+    }
+    .service-icon .icon-holder .i-holder i {
+        margin: auto;
+        align-self: center;
+    }
+    .service-icon .about {
+        padding: 10px;
+    }
+    .service-icon .about p {
+        text-align: center;
+    }
+    .service-icon .about .about-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        align-items: left;
+        padding: 10px 0px;
+        width: 100%;
+        margin: 20px auto;
+        height: 100vh;
+    }
+    .about-container img {
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .about .h2 {
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 650;
+        text-align: left;
+    }
+    
+    .about p {
+        font-size: 15px;
+        text-align: left;
+        letter-spacing: 2px;
+    }
+    
+    .about .about-container .firsthalf {
+        width: 100%;
+    }
+    .accordion {
+        width: 100%;
+        height: auto;
+        margin: 30px 0;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+    footer .footer-container {
+        margin: 20px 0px;
+    }
+    
 }
