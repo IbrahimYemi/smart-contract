@@ -365,8 +365,7 @@ footer .footer-container p {
 
 footer .footer-container a {
     margin-top: 10px;
-    text-decoration: underline;
-    color: #5909c2;
+    color: #f80000;
     letter-spacing: 1px;
     font-weight: 650;
 }
@@ -376,15 +375,16 @@ footer .footer-container .nokia,
 footer .footer-container .samsung {
     font-size: 30px;
     font-weight: 700;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-style: italic;
 }
 
 footer .footer-container .apple {
-    font-family: cursive;
     color: #0c093b;
 }
 
 footer .footer-container .nokia {
-    font-family: 'Times New Roman', Times, serif;
     color: #077a41;
     font-style: italic;
 }
@@ -520,6 +520,9 @@ footer .footer-container .samsung {
         width: 100%;
         margin: 20px auto;
         height: 100vh;
+    }
+    .service-icon .about .about-container .firsthalf {
+        margin-bottom: 25px;
     }
     .about-container img {
         height: auto;
