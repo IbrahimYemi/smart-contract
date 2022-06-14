@@ -522,7 +522,7 @@ footer .footer-container .samsung {
         height: 100vh;
     }
     .service-icon .about .about-container .firsthalf {
-        margin-bottom: 25px;
+        margin: 25px 0px;
     }
     .about-container img {
         height: auto;
