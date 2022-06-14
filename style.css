@@ -10,6 +10,7 @@ body {
     flex: 1;
     background: #ffffff;
     color: #000000;
+    overflow-x: hidden;
 }
 
 header {
@@ -84,7 +85,6 @@ header .login .start:hover {
 
 .body {
     margin: 10px 30px;
-    flex: 1;
 }
 
 .header {
@@ -141,12 +141,13 @@ header .login .start:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 40px;
+    margin: 40px 0px;
 }
 
 .service-icon p {
     font-weight: 750;
     font-size: 23px;
+    margin-top: 50px;
 }
 
 .service-icon .icon-holder {
@@ -168,6 +169,7 @@ header .login .start:hover {
 .service-icon .service {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 .service-icon .service .service-container img {
@@ -180,21 +182,29 @@ header .login .start:hover {
 .service-icon .service .service-container {
     display: flex;
     flex-direction: column;
-    background: #6b27a3;
-    margin: 20px;
+    margin: 40px 10px;
     justify-content: center;
     text-align: center;
     align-items: center;
     width: 300px;
+    height: 500%;
     padding: 20px;
     border-radius: 5px;
-    color: #ffffff;
+    color: #0d1000;
 }
 
+.service-icon .service .service-container:hover {
+    box-shadow: 2px 2px 3px gray, -2px -2px 3px lightgray;
+}
+
+.service-icon .service .service-container:nth-child(2) {
+    margin-top: 150px;
+}
 
 .service-icon .service .service-container h2 {
     font-weight: 650;
     font-size: 22px;
+    color: #5909c2;
 }
 
 
@@ -204,7 +214,160 @@ header .login .start:hover {
     margin-top: 15px;
 }
 
+.about {
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
 .about-container img {
     height: 300px;
-    max-width: 300px;
+    max-width: 500px;
+}
+
+.about .h2 {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 650;
+    text-align: center;
+}
+
+.about p {
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.about .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    width: 80%;
+    margin: auto;
+}
+
+.about .about-container .firsthalf {
+    width: 50%;
+}
+
+
+.about .about-container .firsthalf h3 {
+    color: #5909c2;
+    font-size: 18px;
+}
+
+
+.about .about-container .firsthalf li {
+    list-style-type: disc;
+    margin: 15px 10px;
+}
+
+.about .about-container .firsthalf .blue {
+    color: #0c093b;
+    text-decoration: underline;
+    font-weight: 650;
+}
+
+.accordion {
+    background-color: #f1f4d7;
+    padding: 20px;
+}
+
+.accordion h2 {
+    text-align: center;
+    font-weight: 750;
+    margin-bottom: 30px;
+}
+
+.accordion .accordion-container {
+    background: #fefeff;
+    margin: 20px 0px;
+    padding: 15px;
+    height: 100%;
+}
+
+.accordion .accordion-container button {
+    background: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.accordion .accordion-container h3 {
+    color: #5909c2;
+    text-decoration: underline;
+}
+
+.accordion .accordion-container .acc-show {
+    margin-top: 20px;
+    text-align: justify;
+    line-height: 25px;
+    background-color: #b1ae80;
+    padding: 20px 5px;
+    margin-bottom: 5px;
+}
+
+.fa.fa-times:hover,
+.fa.fa-times:focus {
+    transform: rotate(45deg);
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    background: #f1ecec;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footer-container {
+    text-align: justify;
+    display: block;
+    margin: 20px;
+    padding: 10px;
+}
+
+footer .footer-container:hover {
+    box-shadow: 2px 2px 3px gray, -2px -2px 3px lightgray;
+}
+
+footer .footer-container p {
+    margin: 15px 0;
+    line-height: 25px;
+    font-size: 15px;
+}
+
+footer .footer-container a {
+    margin-top: 10px;
+    text-decoration: underline;
+    color: #5909c2;
+    letter-spacing: 1px;
+    font-weight: 650;
+}
+
+footer .footer-container .apple,
+footer .footer-container .nokia,
+footer .footer-container .samsung {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+footer .footer-container .apple {
+    font-family: cursive;
+    color: #0c093b;
+}
+
+footer .footer-container .nokia {
+    font-family: 'Times New Roman', Times, serif;
+    color: #077a41;
+    font-style: italic;
+}
+
+footer .footer-container .samsung {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #fc0707;
+    letter-spacing: 1px;
+    font-style: italic;
 }
