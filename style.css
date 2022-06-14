@@ -287,7 +287,7 @@ header .login i {
 
 .accordion {
     background-color: #f1f4d7;
-    padding: 20px;
+    padding: 0px;
 }
 
 .accordion h2 {
@@ -301,6 +301,7 @@ header .login i {
     margin: 20px 0px;
     padding: 15px;
     height: 100%;
+    width: 100%;
 }
 
 .accordion .accordion-container button {
@@ -312,7 +313,6 @@ header .login i {
 
 .accordion .accordion-container h3 {
     color: #5909c2;
-    text-decoration: underline;
 }
 
 .accordion .accordion-container .acc-show {
